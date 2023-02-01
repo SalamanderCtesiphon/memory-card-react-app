@@ -1,7 +1,7 @@
 const GameField = () => {
     return (
-        <div>
-            game field
+        <div className="game-field">
+            hi
         </div>
     )
 }
