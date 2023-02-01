@@ -1,7 +1,18 @@
 const GameField = () => {
     return (
         <div className="game-field">
-            hi
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
         </div>
     )
 }
