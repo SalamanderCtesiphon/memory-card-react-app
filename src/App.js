@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Card from './components/Card';
 
 function App(props) {
-  const [click, setClick] = useState(0);
   const [cards, setCards] = useState([
     {
         id: 1,
@@ -64,21 +63,21 @@ function App(props) {
   function getClick(id) {
     const updatedCards = [...cards].map((card) => {
       if (card.id === id) {
-        setClick(click + 1);
+        card.click = card.click + 1;
       }
       return card;
     });
     setCards(updatedCards);
   }
 
-/*   useEffect(() => {
+  useEffect(() => {
     [...cards].map((card) => {
       if (card.click > 1) {
         alert('gameover');
       }
 
     })
-  }, [click]); */
+  });
 
 
 
