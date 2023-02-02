@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Card from './components/Card';
+import { click } from '@testing-library/user-event/dist/click';
 
 function App(props) {
   const [click, setClick] = useState(0);
@@ -64,12 +65,19 @@ function App(props) {
   function getClick(id) {
     const updatedCards = [...cards].map((card) => {
       if (card.id === id) {
-        card.click = 2;
+        card.click = click + 1;
+        setClick(card.click);
       }
       return card;
     });
     setCards(updatedCards);
   }
+
+  useEffect(() => {
+    [...cards].map((card) => {
+
+    })
+  }, [click]);
 
 
 
