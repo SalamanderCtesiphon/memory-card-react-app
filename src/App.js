@@ -5,6 +5,7 @@ import Card from './components/Card';
 
 function App(props) {
   const [game, setGame] = useState(0);
+  const [highScore, setHighScore] = useState(0);
   const [cards, setCards] = useState([
     {
         id: 1,
@@ -74,7 +75,7 @@ function App(props) {
   useEffect(() => {
     [...cards].map((card) => {
       if (card.click > 1) {
-        alert('gameover');
+        game > highScore && setHighScore(game);
       } 
     })
   });
@@ -86,7 +87,7 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-      <p>Score: {game} | High Score: 0 </p>
+      <p>Score: {game} | High Score: {highScore} </p>
       <div className="game-field">
            {cards.map((card) => {
             return (
