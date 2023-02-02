@@ -75,6 +75,9 @@ function App(props) {
 
   useEffect(() => {
     [...cards].map((card) => {
+      if (card.click > 1) {
+        alert('gameover');
+      }
 
     })
   }, [click]);
