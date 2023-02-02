@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Card from './components/Card';
+import { click } from '@testing-library/user-event/dist/click';
 
 function App(props) {
+  const [game, setGame] = useState(0);
   const [cards, setCards] = useState([
     {
         id: 1,
@@ -58,7 +60,6 @@ function App(props) {
   function shuffleArray(cards) {
     cards.sort(() => Math.random() - 0.25);
   }
-
   
   function getClick(id) {
     const updatedCards = [...cards].map((card) => {
@@ -74,8 +75,7 @@ function App(props) {
     [...cards].map((card) => {
       if (card.click > 1) {
         alert('gameover');
-      }
-
+      } 
     })
   });
 
@@ -86,6 +86,7 @@ function App(props) {
   return (
     <div className="App">
       <Header />
+      <p>Score: {game} | High Score: 0 </p>
       <div className="game-field">
            {cards.map((card) => {
             return (
