@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Card from './components/Card';
@@ -61,8 +61,14 @@ function App(props) {
   }
 
   
-  function getClick() {
-    setClick(click + 1);
+  function getClick(id) {
+    const updatedCards = [...cards].map((card) => {
+      if (card.id === id) {
+        card.click = 2;
+      }
+      return card;
+    });
+    setCards(updatedCards);
   }
 
 
@@ -76,6 +82,7 @@ function App(props) {
            {cards.map((card) => {
             return (
                 <Card
+                key={card.id}
                 cards={cards}
                 card={card}
                 getClick={getClick}
