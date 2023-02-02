@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Card from './components/Card';
 
 function App(props) {
   const [click, setClick] = useState(0);
@@ -60,7 +61,7 @@ function App(props) {
   }
 
   
-  function getClick(id) {
+  function getClick() {
     setClick(click + 1);
   }
 
@@ -74,11 +75,11 @@ function App(props) {
       <div className="game-field">
            {cards.map((card) => {
             return (
-                <div 
-                key={cards.indexOf(card)}
-                className="card"
-                onClick={getClick}
-                >{card.id}</div>
+                <Card
+                cards={cards}
+                card={card}
+                getClick={getClick}
+                />
             )
            })}
         </div>
