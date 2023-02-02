@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 
 function App(props) {
+  const [click, setClick] = useState(0);
   const [cards, setCards] = useState([
     {
         id: 1,
@@ -58,12 +59,12 @@ function App(props) {
     cards.sort(() => Math.random() - 0.25);
   }
 
-  const [count, setCount] = useState(0);
+  
+  function getClick(id) {
+    setClick(click + 1);
+  }
 
 
-    function getClick() {
-        setCount(count + 1);
-    }
 
   shuffleArray(cards);
 
