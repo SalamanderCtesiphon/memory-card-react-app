@@ -75,7 +75,8 @@ function App(props) {
   useEffect(() => {
     [...cards].map((card) => {
       if (card.click > 1) {
-        game > highScore && setHighScore(game);
+        game > highScore && setHighScore(game - 1);
+        setGame(0);
       } 
     })
   });
