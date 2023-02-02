@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Card from './components/Card';
-import { click } from '@testing-library/user-event/dist/click';
 
 function App(props) {
   const [game, setGame] = useState(0);
@@ -66,6 +65,7 @@ function App(props) {
       if (card.id === id) {
         card.click = card.click + 1;
       }
+      setGame(game + 1);
       return card;
     });
     setCards(updatedCards);
