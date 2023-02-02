@@ -1,12 +1,86 @@
+import React, { useState } from 'react';
 import './App.css';
-import GameField from './components/GameField';
 import Header from './components/Header';
 
-function App() {
+function App(props) {
+  const [cards, setCards] = useState([
+    {
+        id: 1,
+        click: 0,
+    },
+    {
+        id: 2,
+        click:0,
+    },
+    {
+        id: 3, 
+        click: 0,
+    },
+    {
+        id: 4,
+        click: 0,
+    },
+    {
+        id: 5,
+        click: 0,
+    },
+    {
+        id: 6,
+        click: 0,
+    },
+    {
+        id: 7,
+        click: 0,
+    }, 
+    {
+        id: 8,
+        click: 0,
+    },
+    {
+        id: 9,
+        click: 0,
+    },
+    {
+        id: 10,
+        click: 0,
+    },
+    {
+        id: 11,
+        click: 0,
+    },
+    {
+        id: 12, 
+        click: 0,
+    } 
+  ]);
+
+  function shuffleArray(cards) {
+    cards.sort(() => Math.random() - 0.25);
+  }
+
+  const [count, setCount] = useState(0);
+
+
+    function getClick() {
+        setCount(count + 1);
+    }
+
+  shuffleArray(cards);
+
   return (
     <div className="App">
       <Header />
-      <GameField />
+      <div className="game-field">
+           {cards.map((card) => {
+            return (
+                <div 
+                key={cards.indexOf(card)}
+                className="card"
+                onClick={getClick}
+                >{card.id}</div>
+            )
+           })}
+        </div>
     </div>
   );
 }
