@@ -11,7 +11,9 @@ import sith from "./components/images/sith.jpeg";
 import forceAwakens from "./components/images/forceAwakens.jpg";
 import lastJedi from "./components/images/lastJedi.jpeg";
 import rise from "./components/images/rise.jpg";
-import rogue from "./components/images/rogue.jpeg"
+import rogue from "./components/images/rogue.jpeg";
+import solo from "./components/images/solo.jpeg";
+import andor from "./components/images/andor.jpeg";
 
 function App(props) {
   const [game, setGame] = useState(0);
@@ -70,10 +72,12 @@ function App(props) {
     {
         id: 11,
         click: 0,
+        background: <img src={solo} alt="solo" />,
     },
     {
         id: 12, 
         click: 0,
+        background: <img src={andor} alt="andor" />,
     } 
   ]);
 
@@ -113,8 +117,10 @@ function App(props) {
 
   return (
     <div className="App">
-      <Header />
-      <p>Score: {game} | High Score: {highScore} </p>
+      <Header
+      game={game}
+      highScore={highScore}
+      />
       <div className="game-field">
            {cards.map((card) => {
             return (
