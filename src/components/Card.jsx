@@ -1,9 +1,9 @@
-const Card = ({ cards, card, getClick }) => {
+const Card = ({ card, getClick }) => {
     return (
         <div 
             className="card"
             onClick={() => getClick(card.id)}
-            >{card.id}
+            >{card.background}
         </div>
     )
 }

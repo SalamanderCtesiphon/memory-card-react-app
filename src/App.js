@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Card from './components/Card';
+import aNewHope from "./components/images/aNewHope.jpeg";
+import empire from "./components/images/empire.jpeg";
 
 function App(props) {
   const [game, setGame] = useState(0);
@@ -10,10 +12,12 @@ function App(props) {
     {
         id: 1,
         click: 0,
+        background: <img src={aNewHope} alt="a new hope" />,
     },
     {
         id: 2,
         click:0,
+        background: <img src={empire} alt=" the empire strikes back" />,
     },
     {
         id: 3, 

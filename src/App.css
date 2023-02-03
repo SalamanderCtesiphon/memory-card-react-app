@@ -19,11 +19,14 @@
 .card {
   height: 30vh;
   width: 10vw;
-  border: 1px solid black;
   margin: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
+img {
+  height: 30vh;
+  width: 15vw;
+  border-radius: 5px;
+}
