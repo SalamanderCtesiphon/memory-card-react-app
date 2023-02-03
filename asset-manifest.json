@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card-react-app/static/css/main.75ef7ec8.css",
+    "main.js": "/memory-card-react-app/static/js/main.610a3c29.js",
+    "static/media/lastJedi.jpeg": "/memory-card-react-app/static/media/lastJedi.ecacf938b4c085fe1a64.jpeg",
+    "static/media/rogue.jpeg": "/memory-card-react-app/static/media/rogue.a7dcdf903ca98db585b0.jpeg",
+    "static/media/rise.jpg": "/memory-card-react-app/static/media/rise.881eec52dff449b16868.jpg",
+    "static/media/sith.jpeg": "/memory-card-react-app/static/media/sith.84d0c6f120b47a5e817c.jpeg",
+    "static/media/aNewHope.jpeg": "/memory-card-react-app/static/media/aNewHope.748720dda9113b4bf7d2.jpeg",
+    "static/media/forceAwakens.jpg": "/memory-card-react-app/static/media/forceAwakens.a53999083d90b9289845.jpg",
+    "static/media/clones.jpg": "/memory-card-react-app/static/media/clones.90295241e44f2057b711.jpg",
+    "static/media/returnOfTheJedi.jpeg": "/memory-card-react-app/static/media/returnOfTheJedi.7b7030948372415b2f04.jpeg",
+    "static/media/phantom.jpeg": "/memory-card-react-app/static/media/phantom.ed9f426d11f6169ad2ab.jpeg",
+    "static/media/andor.jpeg": "/memory-card-react-app/static/media/andor.92494308748aee2d9b9c.jpeg",
+    "static/media/empire.jpeg": "/memory-card-react-app/static/media/empire.69a34bb7e623b9adc37e.jpeg",
+    "static/media/solo.jpeg": "/memory-card-react-app/static/media/solo.82a4910b968896614a00.jpeg",
+    "index.html": "/memory-card-react-app/index.html",
+    "main.75ef7ec8.css.map": "/memory-card-react-app/static/css/main.75ef7ec8.css.map",
+    "main.610a3c29.js.map": "/memory-card-react-app/static/js/main.610a3c29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75ef7ec8.css",
+    "static/js/main.610a3c29.js"
+  ]
+}
