@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "memory-game-2198d"
-  }
+    "default": "memory-game-2198d",
+    "build": "memory-game-2198d"
+  },
+  "targets": {},
+  "etags": {}
 }
