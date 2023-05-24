@@ -108,6 +108,7 @@ function App(props) {
           return card;
         })
       } 
+      return card
     })
   });
 
