@@ -14,6 +14,7 @@ import rise from "./components/images/rise.jpg";
 import rogue from "./components/images/rogue.jpeg";
 import solo from "./components/images/solo.jpeg";
 import andor from "./components/images/andor.jpeg";
+import Footer from './components/Footer';
 
 function App(props) {
   const [game, setGame] = useState(0);
@@ -135,6 +136,7 @@ function App(props) {
             )
            })}
         </div>
+      <Footer />  
     </div>
   );
 }
