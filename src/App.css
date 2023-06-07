@@ -64,10 +64,22 @@ h1 {
   justify-content: center;
   cursor: pointer;
   box-shadow: 5px 5px 20px 10px black;
+  transform: scale(1);
+  transition-property: scale();
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
+  transition-delay: 0.25s;
 }
 
+
 .card:hover {
-  background-color: white;
+  background-color: rgba(39, 38, 38, 0.169);
+  box-shadow: 5px 5px 20px 10px rgba(255, 255, 255, 0.427);
+  transform: scale(1.05);
+  transition-property: scale();
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
+  transition-delay: 0.25s;
 }
 
 img {
