@@ -122,6 +122,7 @@ function App(props) {
       game={game}
       highScore={highScore}
       />
+      <h3 className='banner'>Choose one card. If you choose the same card twice the game is over.</h3>
       <div className="game-field">
            {cards.map((card) => {
             return (
