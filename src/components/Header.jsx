@@ -3,7 +3,7 @@ const Header = ({ game, highScore }) => {
         <div className="header">
             <div className="top">
                 <h1>Memory Game</h1>
-                <h1>Score: {game} | High Score: {highScore}</h1>
+                <h1>Your Score: {game} | High Score: {highScore}</h1>
             </div>            
         </div>
     )
