@@ -1,50 +1,19 @@
 * {
-  background-image: linear-gradient( #1a2639, #3e4a61);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .App {
-  text-align: center;
+  background-image: linear-gradient( #1a2639, #3e4a61);
   width: 100vw;
   height: 100vh;
-  margin: 0px;
-  padding: 0px;
   color: aliceblue;
 }
 
-.game-field {
-  font-size: 4rem;
-  margin: 20px;
-  padding: 10px;
-  height: 80vh;
-  width: 97vw;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto auto;
-}
-
-.card {
-  
-  border: 1px solid black;
-  border-radius: 8px;
-  margin: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-img {
-  height: 25vh;
-  width: auto;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-.header {
-  
+.header { 
   border-bottom: 1px solid gray;
+  background-color: #0d2346;
 }
 
 .top {
@@ -53,3 +22,29 @@ img {
   justify-content: space-between;
   padding: 0 3em;
 }
+
+.game-field {
+  font-size: 4rem;
+  margin: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+}
+
+.card {
+  
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 4em;
+  width: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
